@@ -1,19 +1,19 @@
-import Navbar from './navbar'
+import Navbar from "./navbar";
 
 const Index = () => {
   return (
     <>
-      <header id='header-wrapper'>
+      <header id="header-wrapper">
         <Navbar />
-        <section id='banner' className='container'>
+        <section id="banner" className="container">
           <p>
             Mi smo <strong>DigitaLab</strong>, grupa mladih ljudi blabla truc
-            truc.
+            truc. Test TEST TEST TEST
           </p>
         </section>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
