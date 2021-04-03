@@ -1,21 +1,25 @@
-import { Route, Switch } from 'react-router-dom'
-import Error from './../../pages/Error'
+import { Route, Switch } from "react-router-dom";
+import Courses from "../../pages/Courses";
+import Error from "./../../pages/Error";
+import ShowNavbar from "../../pages/Courses";
 
-import Home from './home'
+import Home from "./home";
 const Index = () => {
   return (
     <>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path="/">
           <Home />
         </Route>
-
-        <Route path='*'>
+        <Route path="/courses">
+          <Courses />
+        </Route>
+        <Route path="*">
           <Error />
         </Route>
       </Switch>
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
