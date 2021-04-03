@@ -39,3 +39,19 @@
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
+
+.social-icons {
+  display: flex;
+  color: white;
+  height: 1.5em;
+  width: 2em;
+  font-size: 18pt;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+.social-icons a:hover {
+  color: var(--clr-primary-7);
+}
