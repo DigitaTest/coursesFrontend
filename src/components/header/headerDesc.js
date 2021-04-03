@@ -1,11 +1,7 @@
-import Navbar from './navbar'
-
-const Index = () => {
+const HeaderDesc = () => {
   return (
     <>
-
       <header id="header-wrapper">
-        <Navbar />
         <section id="banner" className="container">
           <p>
             Mi smo <strong>DigitaLab</strong>, grupa mladih ljudi blabla truc
@@ -14,7 +10,7 @@ const Index = () => {
         </section>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default HeaderDesc;
