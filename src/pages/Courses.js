@@ -1,18 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "../components/header/navbar";
 import data from "../assets/data";
-//ovde sam pokusao da ubacim samo navbar al ne moze ovako ocigledno, ako se stavi navbar u okviru Courses
-//komponente onda se duplira na pocetnoj, jer u home.js vec ima <header/>
-const ShowNavbar = () => {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
-};
+
 const Courses = () => {
   const [courses, setCourses] = useState(data);
-  ShowNavbar();
   return (
     <>
       <main id="page-wrapper">
