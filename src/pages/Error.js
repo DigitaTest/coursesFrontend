@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './../components/header/navbar'
 
 const Error = () => {
   return (
-    <id>
+    <>
+      <Navbar />
       <main id='page-wrapper'>
         <div id='featured'>
           <h1>Odradi me :D </h1>
@@ -13,7 +15,7 @@ const Error = () => {
           </Link>
         </div>
       </main>
-    </id>
+    </>
   )
 }
 
