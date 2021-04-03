@@ -1,30 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const Navbar = () => {
   return (
     <>
-      <div id="header" className="container">
-        <div id="logo">
-          <Link to="/">DigitaLab</Link>
+      <div id='header' className='container'>
+        <div id='logo'>
+          <Link to='/'>DigitaLab</Link>
         </div>
-        <section id="menu">
+        <section id='menu'>
           <ul>
             <li>
-              <Link to="/">HOME</Link>
+              <Link to='/'>HOME</Link>
             </li>
             <li>
-              <Link to="/courses">Kursevi</Link>
+              <Link to='/courses'>Kursevi</Link>
             </li>
             <li>
-              <Link to="/error">O nama</Link>
+              <Link to='/team'>O nama</Link>
             </li>
             <li>
-              <Link to="/error">Kontakt</Link>
+              <Link to='/contact'>Kontakt</Link>
             </li>
           </ul>
-          <ul className="social-icons">
+          <ul>
             <li>
               <FaFacebook />
             </li>
@@ -41,7 +41,7 @@ const Navbar = () => {
         </section>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

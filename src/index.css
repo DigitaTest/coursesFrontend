@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   background: #4c5748;
-  font-family: "FontAwesome", "Source Sans Pro", sans-serif;
+  font-family: 'FontAwesome', 'Source Sans Pro', sans-serif;
   font-size: 12pt;
   font-weight: 300;
   color: #000000;
@@ -260,10 +260,11 @@ ul.contact li a.icon-rss:before {
 }
 
 /* Logo (kad se doda)*/
+/* Voditi racuna ---- logo ce se koristiti u headeru / footeru / i svim ostalim komponentama - ne dodavati mu staticke parametre*/
 
 #logo {
   position: absolute;
-  top: 2.5em;
+  top: 3.5em;
   left: 0;
 }
 

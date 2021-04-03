@@ -1,4 +1,8 @@
 /* Footer*/
+div h3 {
+  color: white;
+  font-size: medium;
+}
 
 .footer {
   overflow: hidden;
@@ -15,7 +19,7 @@
 
 .footer .footer-content .footer-Section {
   flex: 1;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 /* Copyrigh*/
@@ -41,6 +45,7 @@
 }
 
 .social-icons {
+  padding-left: 5em;
   display: flex;
   color: white;
   height: 1.5em;
@@ -54,4 +59,19 @@
 }
 .social-icons a:hover {
   color: var(--clr-primary-7);
+}
+
+.logo-footer {
+  padding-left: 1em;
+}
+.logo-footer h1 {
+  letter-spacing: 0.1em;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.logo-footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
 }
