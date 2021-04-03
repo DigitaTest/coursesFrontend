@@ -1,0 +1,41 @@
+/* Footer*/
+
+.footer {
+  overflow: hidden;
+  padding: 5em 0em;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  height: 200px;
+  position: relative;
+}
+
+.footer .footer-content {
+  display: flex;
+  height: 200px;
+}
+
+.footer .footer-content .footer-Section {
+  flex: 1;
+  border: 1px solid white;
+}
+
+/* Copyrigh*/
+
+.copyright {
+  height: 50px;
+  width: 100%;
+  padding-top: 20px;
+  position: absolute;
+}
+
+.copyright p {
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.copyright a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
