@@ -1,11 +1,7 @@
-import Navbar from "./navbar";
-import { BrowserRouter as Router } from "react-router-dom";
-
-const Index = () => {
+const HeaderDesc = () => {
   return (
     <>
       <header id="header-wrapper">
-        <Navbar />
         <section id="banner" className="container">
           <p>
             Mi smo <strong>DigitaLab</strong>, grupa mladih ljudi blabla truc
@@ -17,4 +13,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default HeaderDesc;
