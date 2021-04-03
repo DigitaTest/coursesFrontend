@@ -1,3 +1,4 @@
+
 import React from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
@@ -14,6 +15,7 @@ const Error = () => {
           </Link>
         </div>
       </main>
+
     </id>
   );
 };

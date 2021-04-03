@@ -1,9 +1,9 @@
-import Navbar from "./navbar";
-import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from './navbar'
 
 const Index = () => {
   return (
     <>
+
       <header id="header-wrapper">
         <Navbar />
         <section id="banner" className="container">
@@ -14,7 +14,7 @@ const Index = () => {
         </section>
       </header>
     </>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
