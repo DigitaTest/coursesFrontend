@@ -1,4 +1,3 @@
-
 import { Route, Switch } from "react-router-dom";
 import Courses from "../../pages/courses";
 import Error from "../../pages/Error";
@@ -15,7 +14,7 @@ const Index = () => {
   return (
     <>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path="/">
           <Home />
         </Route>
         <Route exact path="/courses">
@@ -46,7 +45,7 @@ const Index = () => {
         </Route>
       </Switch>
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
