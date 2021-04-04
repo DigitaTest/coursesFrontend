@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   background: #4c5748;
-  font-family: 'FontAwesome', 'Source Sans Pro', sans-serif;
+  font-family: "FontAwesome", "Source Sans Pro", sans-serif;
   font-size: 12pt;
   font-weight: 300;
   color: #000000;
@@ -428,4 +428,22 @@ ul.contact li a.icon-rss:before {
   margin: 0 0.5rem;
   color: white;
   transition: var(--transition);
+}
+
+/* KURS PAGE */
+
+.courseInfo {
+  text-align: center;
+}
+
+.player-wrapper {
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+  padding-top: 35%;
+}
+.player {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

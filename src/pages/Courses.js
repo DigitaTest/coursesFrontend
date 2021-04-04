@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React, { useState } from "react";
 import Navbar from "../components/header/navbar";
 import data from "../assets/data";
@@ -10,6 +11,12 @@ const ShowNavbar = () => {
     </>
   );
 };
+=======
+import react, { useState } from "react";
+import data from "../assets/data";
+import { Link } from "react-router-dom";
+
+>>>>>>> Stashed changes
 const Courses = () => {
   const [courses, setCourses] = useState(data);
   ShowNavbar();
@@ -26,9 +33,9 @@ const Courses = () => {
                     <h2>{course.name}</h2>
                     <img src={course.image} alt="" width="250" height="250" />
                     <p>{course.desc}</p>
-                    <a href="" className="button">
+                    <Link to={`/course/${course.id}`} className="button">
                       Saznaj više
-                    </a>
+                    </Link>
                   </div>
                 </div>
               );
