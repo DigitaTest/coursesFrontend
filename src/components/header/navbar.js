@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
-
+import { TiUser } from 'react-icons/ti'
+import { ImHome3 } from 'react-icons/im'
 const Navbar = () => {
   return (
     <>
@@ -12,7 +13,9 @@ const Navbar = () => {
         <section id='menu'>
           <ul>
             <li>
-              <Link to='/'>HOME</Link>
+              <Link to='/'>
+                <ImHome3 />
+              </Link>
             </li>
             <li>
               <Link to='/courses'>Kursevi</Link>
@@ -36,6 +39,13 @@ const Navbar = () => {
             </li>
             <li>
               <FaTwitter />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <Link to='/user'>
+                <TiUser />
+              </Link>
             </li>
           </ul>
         </section>

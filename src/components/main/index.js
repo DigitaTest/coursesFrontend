@@ -8,6 +8,7 @@ import ContactUs from '../contactUs/contactUs'
 import Blog from '../blog/blog'
 import FAQ from '../../pages/faq/FAQ'
 import PrivacyPolicy from '../../pages/privacyPolicy'
+import UserProfile from './../users/userProfile'
 
 const Index = () => {
   return (
@@ -30,6 +31,9 @@ const Index = () => {
         </Route>
         <Route path='/blog'>
           <Blog />
+        </Route>
+        <Route path='/user'>
+          <UserProfile />
         </Route>
         <Route path='/FAQ'>
           <FAQ />
