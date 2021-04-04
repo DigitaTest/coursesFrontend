@@ -1,14 +1,15 @@
-import { Route, Switch } from 'react-router-dom'
-import Courses from '../../pages/Courses'
-import Error from './../../pages/Error'
-import ShowNavbar from '../../pages/Courses'
-import Home from './home'
-import Team from '../team/team'
-import ContactUs from '../contactUs/contactUs'
-import Blog from '../blog/blog'
-import FAQ from '../../pages/faq/FAQ'
-import PrivacyPolicy from '../../pages/privacyPolicy'
-import UserProfile from './../users/userProfile'
+
+import { Route, Switch } from "react-router-dom";
+import Courses from "../../pages/courses";
+import Error from "../../pages/Error";
+import Home from "./home";
+import Team from "../team/team";
+import ContactUs from "../contactUs/contactUs";
+import Blog from "../blog/blog";
+import FAQ from "../../pages/faq/FAQ";
+import PrivacyPolicy from "../../pages/privacyPolicy";
+import UserProfile from "./../users/userProfile";
+import Course from "../course/course";
 
 const Index = () => {
   return (
@@ -17,31 +18,30 @@ const Index = () => {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route exact path='/courses'>
+        <Route exact path="/courses">
           <Courses />
         </Route>
-        <Route exact path='/error'>
-          <Error />
-        </Route>
-        <Route path='/contact'>
+        <Route path="/contact">
           <ContactUs />
         </Route>
-        <Route path='/team'>
+        <Route path="/team">
           <Team />
         </Route>
-        <Route path='/blog'>
+        <Route path="/blog">
           <Blog />
         </Route>
-        <Route path='/user'>
+        <Route path="/user">
           <UserProfile />
         </Route>
-        <Route path='/FAQ'>
+        <Route path="/FAQ">
           <FAQ />
         </Route>
-        <Route path='/privacy'>
+        <Route path="/privacy">
           <PrivacyPolicy />
         </Route>
-        <Route path='*'>
+        <Route path="/course/:id" children={<Course />}></Route>
+
+        <Route path="*">
           <Error />
         </Route>
       </Switch>
