@@ -1,4 +1,8 @@
 /* Footer*/
+div h3 {
+  color: white;
+  font-size: medium;
+}
 
 .footer {
   overflow: hidden;
@@ -15,7 +19,7 @@
 
 .footer .footer-content .footer-Section {
   flex: 1;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 /* Copyrigh*/
@@ -38,4 +42,36 @@
 .copyright a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+  padding-left: 5em;
+  display: flex;
+  color: white;
+  height: 1.5em;
+  width: 2em;
+  font-size: 18pt;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+.social-icons a:hover {
+  color: var(--clr-primary-7);
+}
+
+.logo-footer {
+  padding-left: 1em;
+}
+.logo-footer h1 {
+  letter-spacing: 0.1em;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.logo-footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
 }

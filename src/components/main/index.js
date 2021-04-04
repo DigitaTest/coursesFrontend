@@ -1,11 +1,5 @@
-import { Route, Switch } from "react-router-dom";
-<<<<<<< Updated upstream
-import Courses from "../../pages/Courses";
-import Error from "./../../pages/Error";
-import ShowNavbar from "../../pages/Courses";
 
-import Home from "./home";
-=======
+import { Route, Switch } from "react-router-dom";
 import Courses from "../../pages/courses";
 import Error from "../../pages/Error";
 import Home from "./home";
@@ -16,19 +10,14 @@ import FAQ from "../../pages/faq/FAQ";
 import PrivacyPolicy from "../../pages/privacyPolicy";
 import UserProfile from "./../users/userProfile";
 import Course from "../course/course";
->>>>>>> Stashed changes
+
 const Index = () => {
   return (
     <>
       <Switch>
-        <Route exact path="/">
+        <Route exact path='/'>
           <Home />
         </Route>
-<<<<<<< Updated upstream
-        <Route path="/courses">
-          <Courses />
-        </Route>
-=======
         <Route exact path="/courses">
           <Courses />
         </Route>
@@ -51,13 +40,13 @@ const Index = () => {
           <PrivacyPolicy />
         </Route>
         <Route path="/course/:id" children={<Course />}></Route>
->>>>>>> Stashed changes
+
         <Route path="*">
           <Error />
         </Route>
       </Switch>
     </>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
