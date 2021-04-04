@@ -1,5 +1,18 @@
-import React, { useState } from "react";
+
+
+//ovde sam pokusao da ubacim samo navbar al ne moze ovako ocigledno, ako se stavi navbar u okviru Courses
+//komponente onda se duplira na pocetnoj, jer u home.js vec ima <header/>
+const ShowNavbar = () => {
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
+
+import react, { useState } from "react";
 import data from "../assets/data";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   const [courses, setCourses] = useState(data);
@@ -16,9 +29,9 @@ const Courses = () => {
                     <h2>{course.name}</h2>
                     <img src={course.image} alt="" width="250" height="250" />
                     <p>{course.desc}</p>
-                    <a href="" className="button">
+                    <Link to={`/course/${course.id}`} className="button">
                       Saznaj više
-                    </a>
+                    </Link>
                   </div>
                 </div>
               );
