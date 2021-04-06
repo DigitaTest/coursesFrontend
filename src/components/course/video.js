@@ -12,9 +12,9 @@ const VidPlayer = () => {
     setVideo(newCourse.video);
   }, []);
   return (
-    <div className="player-wrapper">
+    <div id="player-wrapper">
       <ReactPlayer
-        className="player"
+        id="player"
         url={video}
         width="100%"
         height="100%"
