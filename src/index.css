@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: #4c5748;
+  background: black;
   font-family: "FontAwesome", "Source Sans Pro", sans-serif;
   font-size: 12pt;
   font-weight: 300;
@@ -107,62 +107,6 @@ ul.style2 li:first-child {
   padding-top: 0;
 }
 
-/*Ikonice za Insta, Fejs itd. TEK TREBA DA SE DODA*/
-
-.icons-sidebar-unit {
-  float: right;
-
-  vertical-align: middle;
-  font-size: 30px;
-}
-ul.contact {
-  margin: 0;
-  padding: 0em 0em 0em 0em;
-  list-style: none;
-}
-
-ul.contact li {
-  display: inline-block;
-  padding: 0em 0.3em;
-  font-size: 1em;
-}
-
-ul.contact li span {
-  display: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul.contact li a {
-  color: #fff;
-}
-
-ul.contact li a:before {
-  display: inline-block;
-  background: #3f3f3f;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #ffffff;
-}
-
-ul.contact li a.icon-twitter:before {
-  background: #2daae4;
-}
-ul.contact li a.icon-facebook:before {
-  background: #39599f;
-}
-ul.contact li a.icon-dribbble:before {
-  background: #c4376b;
-}
-ul.contact li a.icon-tumblr:before {
-  background: #31516a;
-}
-ul.contact li a.icon-rss:before {
-  background: #f2600b;
-}
-
 /* STIL BUTTON-a (treba promeniti izgleda kao kurac)*/
 
 .button {
@@ -249,7 +193,7 @@ ul.contact li a.icon-rss:before {
 
 #header-wrapper {
   overflow: hidden;
-  background: url(assets/pic01.jpg) no-repeat center;
+  background: url(assets/pic02.jpg) no-repeat center;
   background-size: 100% auto;
 }
 
@@ -305,7 +249,7 @@ ul.contact li a.icon-rss:before {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.9em;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /* Banner */
@@ -412,17 +356,21 @@ ul.contact li a.icon-rss:before {
 
 /* KURS PAGE */
 
-.courseInfo {
+#courseInfo {
   text-align: center;
+  color: black;
+  overflow: hidden;
+  padding: 5em 0em;
+  background: #f1f5f8;
 }
 
-.player-wrapper {
+#player-wrapper {
   /* display: flex;
   justify-content: center; */
   position: relative;
   padding-top: 35%;
 }
-.player {
+#player {
   position: absolute;
   top: 0;
   left: 0;
