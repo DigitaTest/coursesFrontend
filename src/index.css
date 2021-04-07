@@ -1,8 +1,10 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: black;
-  font-family: "FontAwesome", "Source Sans Pro", sans-serif;
+  background: #282828;
+  /* background: #4c5748; */
+  font-family: 'FontAwesome', 'Source Sans Pro', sans-serif;
+
   font-size: 12pt;
   font-weight: 300;
   color: #000000;
@@ -200,7 +202,7 @@ ul.style2 li:first-child {
 #header {
   overflow: hidden;
   position: relative;
-  padding: 5em 0em;
+  padding: 2.5em 0em;
 }
 
 /* Logo (kad se doda)*/
@@ -208,7 +210,7 @@ ul.style2 li:first-child {
 
 #logo {
   position: absolute;
-  top: 3.5em;
+  top: 2em;
   left: 0;
 }
 
@@ -228,7 +230,7 @@ ul.style2 li:first-child {
 
 #menu {
   position: absolute;
-  top: 3.5em;
+  top: 2em;
   right: 0;
 }
 
