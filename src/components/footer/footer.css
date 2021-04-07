@@ -8,6 +8,7 @@ div h3 {
   overflow: hidden;
   padding: 4em 0em;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
+
   position: relative;
 }
 
@@ -62,6 +63,7 @@ div h3 {
 
 .logo-footer {
   padding-left: 1em;
+  margin-right: 150px;
 }
 .logo-footer h1 {
   letter-spacing: 0.1em;

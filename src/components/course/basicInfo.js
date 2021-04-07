@@ -17,11 +17,11 @@ const BasicInfo = () => {
 
   return (
     <>
-      <div className="courseInfo">
+      <div id="courseInfo">
         <h1>{name}</h1>
         <img src={image} alt="" width="250" height="250" />
+        <p>{desc}</p>
       </div>
-      <p className="lo">{desc}</p>
     </>
   );
 };
