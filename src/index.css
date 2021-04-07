@@ -1,8 +1,9 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: #4c5748;
-  font-family: "FontAwesome", "Source Sans Pro", sans-serif;
+  background: #282828;
+  /* background: #4c5748; */
+  font-family: 'FontAwesome', 'Source Sans Pro', sans-serif;
   font-size: 12pt;
   font-weight: 300;
   color: #000000;
@@ -256,7 +257,7 @@ ul.contact li a.icon-rss:before {
 #header {
   overflow: hidden;
   position: relative;
-  padding: 5em 0em;
+  padding: 2.5em 0em;
 }
 
 /* Logo (kad se doda)*/
@@ -264,7 +265,7 @@ ul.contact li a.icon-rss:before {
 
 #logo {
   position: absolute;
-  top: 3.5em;
+  top: 2em;
   left: 0;
 }
 
@@ -284,7 +285,7 @@ ul.contact li a.icon-rss:before {
 
 #menu {
   position: absolute;
-  top: 3.5em;
+  top: 2em;
   right: 0;
 }
 
