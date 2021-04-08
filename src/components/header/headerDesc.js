@@ -2,14 +2,14 @@ const HeaderDesc = () => {
   return (
     <>
       <header id="header-wrapper">
-        <section id="banner" className="container">
+        <section id="banner">
           <div>
-            <h1>
+            {/* <h1>
               <strong>DigitaLab</strong>
-            </h1>
-            <h3 style={{ fontStyle: "italic" }}>
+            </h1> */}
+            {/* <h3 style={{ fontStyle: "italic" }}>
               ,,Kratak citat jedna recenica''
-            </h3>
+            </h3> */}
           </div>
         </section>
       </header>

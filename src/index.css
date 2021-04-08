@@ -2,7 +2,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: #282828;
+  background: #ffffff;
   /* background: #4c5748; */
   font-family: "Oswald", "Source Sans Pro", sans-serif;
   font-size: 12pt;
@@ -195,8 +195,9 @@ ul.style2 li:first-child {
 
 #header-wrapper {
   overflow: hidden;
-  background: url(assets/pic02.jpg) no-repeat center;
-  background-size: 100% auto;
+  background: url(assets/pic02.png) no-repeat center;
+  height: 380px;
+  background-size: 97% auto;
 }
 
 #header {
@@ -232,6 +233,7 @@ ul.style2 li:first-child {
   position: absolute;
   top: 2em;
   right: 0;
+  color: #000000;
 }
 
 #menu ul {
@@ -251,7 +253,7 @@ ul.style2 li:first-child {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.9em;
-  color: rgb(255, 255, 255);
+  color: rgb(24, 201, 186);
 }
 
 /* Banner */
@@ -261,7 +263,7 @@ ul.style2 li:first-child {
   padding: 3em 0em 2em 0em;
   margin-bottom: 5em;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -275,7 +277,7 @@ ul.style2 li:first-child {
 #page-wrapper {
   overflow: hidden;
   padding: 5em 0em;
-  background: #f1f5f8;
+  background: rgb(209, 174, 99);
 }
 
 /* Featured*/
@@ -352,7 +354,7 @@ ul.style2 li:first-child {
 
 .social-icons li {
   margin: 0 0.5rem;
-  color: rgb(39, 0, 0);
+  color: white;
   transition: var(--transition);
 }
 
