@@ -1,30 +1,33 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { TiUser } from 'react-icons/ti'
-import { ImHome3 } from 'react-icons/im'
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { TiUser } from "react-icons/ti";
+import { ImHome3 } from "react-icons/im";
+import logo from "../../assets/logo.png";
 const Navbar = () => {
   return (
     <>
-      <div id='header' className='container'>
-        <div id='logo'>
-          <Link to='/'>DigitaLab</Link>
+      <div id="header" className="container">
+        <div id="logo">
+          <Link to="/">
+            <img src={logo} alt="" width="75" height="75" />
+          </Link>
         </div>
-        <section id='menu'>
+        <section id="menu">
           <ul>
             <li>
-              <Link to='/'>
+              <Link to="/">
                 <ImHome3 />
               </Link>
             </li>
             <li>
-              <Link to='/courses'>Kursevi</Link>
+              <Link to="/courses">Kursevi</Link>
             </li>
             <li>
-              <Link to='/team'>O nama</Link>
+              <Link to="/team">O nama</Link>
             </li>
             <li>
-              <Link to='/contact'>Kontakt</Link>
+              <Link to="/contact">Kontakt</Link>
             </li>
           </ul>
           <ul>
@@ -43,7 +46,7 @@ const Navbar = () => {
           </ul>
           <ul>
             <li>
-              <Link to='/user'>
+              <Link to="/user">
                 <TiUser />
               </Link>
             </li>
@@ -51,7 +54,7 @@ const Navbar = () => {
         </section>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
