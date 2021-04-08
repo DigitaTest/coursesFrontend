@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 body {
   margin: 0px;
   padding: 0px;
   background: #282828;
   /* background: #4c5748; */
-  font-family: 'FontAwesome', 'Source Sans Pro', sans-serif;
-
+  font-family: "Oswald", "Source Sans Pro", sans-serif;
   font-size: 12pt;
   font-weight: 300;
   color: #000000;
@@ -210,7 +210,7 @@ ul.style2 li:first-child {
 
 #logo {
   position: absolute;
-  top: 2em;
+  top: 0;
   left: 0;
 }
 
@@ -352,7 +352,7 @@ ul.style2 li:first-child {
 
 .social-icons li {
   margin: 0 0.5rem;
-  color: white;
+  color: rgb(39, 0, 0);
   transition: var(--transition);
 }
 

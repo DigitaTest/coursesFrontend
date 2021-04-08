@@ -3,10 +3,14 @@ const HeaderDesc = () => {
     <>
       <header id="header-wrapper">
         <section id="banner" className="container">
-          <p>
-            Mi smo <strong>DigitaLab</strong>, grupa mladih ljudi blabla truc
-            truc. Test TEST TEST TEST
-          </p>
+          <div>
+            <h1>
+              <strong>DigitaLab</strong>
+            </h1>
+            <h3 style={{ fontStyle: "italic" }}>
+              ,,Kratak citat jedna recenica''
+            </h3>
+          </div>
         </section>
       </header>
     </>
