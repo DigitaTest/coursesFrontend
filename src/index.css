@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
 body {
   margin: 0px;
   padding: 0px;
@@ -48,7 +50,19 @@ a:hover {
 }
 
 /* STIL SLIKA*/
+.box {
+  width: 100%;
+  height: 1000px;
+  padding: 20px;
+  margin: 200px auto;
+  box-shadow: 0px 0px 10px 2px;
+  background-color: white;
+}
 
+#group-photo {
+  position: relative;
+  bottom: 22%;
+}
 .image {
   display: inline-block;
 }
@@ -358,6 +372,13 @@ ul.style2 li:first-child {
   transition: var(--transition);
 }
 
+#user-Icon {
+  font-size: 1.8em;
+  position: relative;
+  right: 10px;
+  top: 5px;
+}
+
 /* KURS PAGE */
 
 #courseInfo {
@@ -378,4 +399,37 @@ ul.style2 li:first-child {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* CITAT */
+
+.blockquote {
+  padding: 60px 80px 40px;
+  position: relative;
+}
+.blockquote p {
+  font-family: "Utopia-italic";
+  font-size: 35px;
+  font-weight: 700px;
+  text-align: center;
+}
+.blockquote:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  top: 0;
+
+  content: "\f10d";
+  font-size: 200px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.blockquote::after {
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  border-bottom: 3px solid rgb(24, 201, 186);
+  height: 3px;
+  width: 200px;
 }
