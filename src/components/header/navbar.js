@@ -32,6 +32,13 @@ const Navbar = () => {
           </ul>
           <ul>
             <li>
+              <Link to="/user">
+                <TiUser id="user-Icon" />
+              </Link>
+            </li>
+          </ul>
+          <ul>
+            <li>
               <FaFacebook />
             </li>
             <li>
@@ -42,13 +49,6 @@ const Navbar = () => {
             </li>
             <li>
               <FaTwitter />
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link to="/user">
-                <TiUser />
-              </Link>
             </li>
           </ul>
         </section>
