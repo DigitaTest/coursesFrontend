@@ -49,6 +49,32 @@ a:hover {
   width: 1000px;
 }
 
+.btn-signup {
+  background: linear-gradient(to bottom, #f2a35e 5%, #f0a767 100%);
+  border-radius: 25px;
+  border: 1px solid #000000;
+  display: block;
+  float: left;
+  cursor: pointer;
+  color: white;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1px 12px;
+  margin-right: 22px;
+  text-decoration: none;
+}
+
+.btn-signup:hover {
+  background: linear-gradient(to bottom, #f1d2b6 5%, #f1d2b6 100%);
+  background-color: #ffffff;
+}
+
+.btn-signup:active {
+  position: relative;
+  top: 1px;
+}
+
 /* STIL SLIKA*/
 .box {
   width: 100%;
@@ -133,6 +159,7 @@ ul.style2 li:first-child {
   border-radius: 7px;
   border: 1px solid #373f34;
   letter-spacing: 0.2em;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
@@ -217,7 +244,7 @@ ul.style2 li:first-child {
 #header {
   overflow: hidden;
   position: relative;
-  padding: 2.5em 0em;
+  padding: 3em 0em;
 }
 
 /* Logo (kad se doda)*/
@@ -267,7 +294,7 @@ ul.style2 li:first-child {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.9em;
-  color: rgb(24, 201, 186);
+  color: #f2a35e;
 }
 
 /* Banner */

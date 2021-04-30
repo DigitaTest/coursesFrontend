@@ -1,7 +1,7 @@
 import "./index.css";
-import Footer from "./components/footer/";
+import Footer from "./components/footer";
 import Navbar from "./components/header/navbar";
-import Main from "./components/main/";
+import Routing from "./components/routing";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Main />
+        <Routing />
         <Footer />
       </Router>
     </>

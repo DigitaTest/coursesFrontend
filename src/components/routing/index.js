@@ -1,16 +1,17 @@
 import { Route, Switch } from "react-router-dom";
 import Error from "../../pages/Error";
-import Home from "./home";
+import Home from "../../pages/home";
 import Team from "../team/team";
-import ContactUs from "../contactUs/contactUs";
-import Blog from "../blog/blog";
-import FAQ from "../../pages/faq/FAQ";
+import ContactUs from "../../pages/contactUs";
+import FAQ from "../../pages/FAQ";
+import Blog from "../../pages/blog";
 import PrivacyPolicy from "../../pages/privacyPolicy";
-import UserProfile from "./../users/userProfile";
+import UserProfile from "../users/userProfile";
 import Courses from "../../pages/courses";
 import Course from "../course/course";
+import SignUp from "../users/signup";
 
-const Index = () => {
+const Routing = () => {
   return (
     <>
       <Switch>
@@ -38,8 +39,10 @@ const Index = () => {
         <Route path="/privacy">
           <PrivacyPolicy />
         </Route>
+        <Route path="/signup">
+          <SignUp />
+        </Route>
         <Route path="/course/:id" children={<Course />}></Route>
-
         <Route path="*">
           <Error />
         </Route>
@@ -48,4 +51,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Routing;
