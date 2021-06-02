@@ -38,8 +38,13 @@ const Navbar = () => {
             </li>
           </ul>
           <ul>
+            <button className="btn-login">
+              <Link to="login">PRIJAVI SE </Link>
+            </button>
+          </ul>
+          <ul>
             <button className="btn-signup">
-              <Link to="/signup">PRIJAVI SE </Link>
+              <Link to="/signup">REGISTRUJ SE </Link>
             </button>
           </ul>
           <ul>

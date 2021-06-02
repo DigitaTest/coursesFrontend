@@ -50,7 +50,7 @@ a:hover {
 }
 
 .btn-signup {
-  background: linear-gradient(to bottom, #f2a35e 5%, #f0a767 100%);
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
   border-radius: 25px;
   border: 1px solid #000000;
   display: block;
@@ -71,6 +71,32 @@ a:hover {
 }
 
 .btn-signup:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-login {
+  background: linear-gradient(to bottom, #ffffff 5%, #f2a35e 100%);
+  border-radius: 25px;
+  border: 1px solid #000000;
+  display: block;
+  float: left;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1px 12px;
+  margin-right: 22px;
+  text-decoration: none;
+}
+
+.btn-login:hover {
+  background: linear-gradient(to bottom, #f1d2b6 5%, #f1d2b6 100%);
+  background-color: #ffffff;
+}
+
+.btn-login:active {
   position: relative;
   top: 1px;
 }
@@ -226,6 +252,7 @@ ul.style2 li:first-child {
 
 .tbox1 {
   float: left;
+  padding-left: 8%;
 }
 
 .tbox2 {
