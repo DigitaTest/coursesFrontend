@@ -1,17 +1,9 @@
 const HeaderDesc = () => {
   return (
     <>
+      {/* Ovo je komponenta u kojoj se nalazi header slika tj. banner */}
       <header id="header-wrapper">
-        <section id="banner">
-          <div>
-            {/* <h1>
-              <strong>DigitaLab</strong>
-            </h1> */}
-            {/* <h3 style={{ fontStyle: "italic" }}>
-              ,,Kratak citat jedna recenica''
-            </h3> */}
-          </div>
-        </section>
+        <section id="banner"></section>
       </header>
     </>
   );

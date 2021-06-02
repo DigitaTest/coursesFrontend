@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { TiUser } from "react-icons/ti";
 import { ImHome3 } from "react-icons/im";
@@ -10,7 +10,7 @@ const Navbar = () => {
       <div id="header" className="container">
         <div id="logo">
           <Link to="/">
-            <img src={logo} alt="" width="75" height="75" />
+            <img src={logo} alt="" />
           </Link>
         </div>
         <section id="menu">
@@ -36,6 +36,16 @@ const Navbar = () => {
                 <TiUser id="user-Icon" />
               </Link>
             </li>
+          </ul>
+          <ul>
+            <button className="btn-login">
+              <Link to="login">PRIJAVI SE </Link>
+            </button>
+          </ul>
+          <ul>
+            <button className="btn-signup">
+              <Link to="/signup">REGISTRUJ SE </Link>
+            </button>
           </ul>
           <ul>
             <li>
