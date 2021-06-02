@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #ffffff;
+  /* background: #4c5748; */
+  font-family: "Oswald", "Source Sans Pro", sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+  color: #000000;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+ol,
+ul {
+  margin-top: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  line-height: 180%;
+}
+
+a {
+  color: #151515;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  overflow: hidden;
+  margin: 0em auto;
+  width: 1000px;
+}
+
+.btn-signup {
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  border-radius: 25px;
+  border: 1px solid #000000;
+  display: block;
+  float: left;
+  cursor: pointer;
+  color: white;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1px 12px;
+  margin-right: 22px;
+  text-decoration: none;
+}
+
+.btn-signup:hover {
+  background: linear-gradient(to bottom, #f1d2b6 5%, #f1d2b6 100%);
+  background-color: #ffffff;
+}
+
+.btn-signup:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-login {
+  background: linear-gradient(to bottom, #ffffff 5%, #f2a35e 100%);
+  border-radius: 25px;
+  border: 1px solid #000000;
+  display: block;
+  float: left;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1px 12px;
+  margin-right: 22px;
+  text-decoration: none;
+}
+
+.btn-login:hover {
+  background: linear-gradient(to bottom, #f1d2b6 5%, #f1d2b6 100%);
+  background-color: #ffffff;
+}
+
+.btn-login:active {
+  position: relative;
+  top: 1px;
+}
+
+/* STIL SLIKA*/
+.box {
+  width: 100%;
+  height: 1000px;
+  padding: 20px;
+  margin: 200px auto;
+  box-shadow: 0px 0px 10px 2px;
+  background-color: white;
+}
+
+#group-photo {
+  position: relative;
+  bottom: 22%;
+}
+.image {
+  display: inline-block;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+}
+
+.image-full {
+  display: block;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+.image-left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+.image-centered {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+.image-centered img {
+  margin: 0 auto;
+  width: auto;
+}
+
+/*STIL LISTI */
+
+ul.style2 {
+  margin: 0;
+  padding-top: 1em;
+  list-style: none;
+}
+
+ul.style2 li {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.8em 0 0.8em 0;
+  font-family: 0.8em;
+}
+
+ul.style2 li:before {
+  display: inline-block;
+  padding: 4px;
+  background: #db3256;
+}
+
+ul.style2 a {
+  display: inline-block;
+  color: #35514f;
+}
+
+ul.style2 li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+/* STIL BUTTON-a (treba promeniti izgleda kao kurac)*/
+
+.button {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 1em 2em 1em 2em;
+  background: #40493c;
+  border-radius: 7px;
+  border: 1px solid #373f34;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.button:before {
+  display: inline-block;
+  background: #ffc31f;
+  margin-right: 1em;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: #272925;
+}
+
+/* 4-column*/
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 235px;
+}
+
+.box1,
+.box2,
+.box3 {
+  float: left;
+  margin-right: 20px;
+}
+
+.box4 {
+  float: right;
+}
+
+/* 3-column*/
+
+.boxA,
+.boxB,
+.boxC {
+  width: 320px;
+}
+
+.boxA,
+.boxB {
+  float: left;
+  margin-right: 20px;
+}
+
+.boxC {
+  float: right;
+}
+
+/* 2-column*/
+
+.tbox1,
+.tbox2 {
+  width: 490px;
+}
+
+.tbox1 {
+  float: left;
+  padding-left: 8%;
+}
+
+.tbox2 {
+  float: right;
+}
+
+/* Header*/
+
+#header-wrapper {
+  overflow: hidden;
+  background: url(assets/pic02.png) no-repeat center;
+  height: 380px;
+  background-size: 97% auto;
+}
+
+#header {
+  overflow: hidden;
+  position: relative;
+  padding: 3em 0em;
+}
+
+/* Logo (kad se doda)*/
+/* Voditi racuna ---- logo ce se koristiti u headeru / footeru / i svim ostalim komponentama - ne dodavati mu staticke parametre*/
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#logo h1 {
+  letter-spacing: 0.1em;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+#logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Menu*/
+
+#menu {
+  position: absolute;
+  top: 2em;
+  right: 0;
+  color: #000000;
+}
+
+#menu ul {
+  display: inline-block;
+}
+
+#menu li {
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+#menu li a,
+#menu li span {
+  padding: 1em 1.5em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #f2a35e;
+}
+
+/* Banner */
+
+#banner {
+  overflow: hidden;
+  padding: 3em 0em 2em 0em;
+  margin-bottom: 5em;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#banner a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Main*/
+
+#page-wrapper {
+  overflow: hidden;
+  padding: 5em 0em;
+  background: rgb(209, 174, 99);
+}
+
+/* Featured*/
+
+#featured {
+  overflow: hidden;
+  text-align: center;
+}
+
+#featured .title h2 {
+  margin-bottom: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-size: 2.6em;
+  color: #40493c;
+}
+
+#featured h2 {
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #40493c;
+}
+
+#featured img {
+  margin-bottom: 2em;
+}
+
+#featured .padding-bottom {
+  margin-bottom: 6em;
+}
+
+/* Portfolio*/
+
+#portfolio {
+  overflow: hidden;
+  padding: 5em 0em;
+}
+
+#portfolio h2 {
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+#portfolio p {
+  letter-spacing: 0.1em;
+}
+
+/* ####### Laza ubacio ###### */
+
+.btn {
+  display: inline-block;
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--clr-primary-1);
+  color: var(--clr-primary-5);
+}
+
+.social-icons li {
+  margin: 0 0.5rem;
+  color: white;
+  transition: var(--transition);
+}
+
+#user-Icon {
+  font-size: 1.8em;
+  position: relative;
+  right: 10px;
+  top: 5px;
+}
+
+/* KURS PAGE */
+
+#courseInfo {
+  text-align: center;
+  color: black;
+  overflow: hidden;
+  padding: 5em 0em;
+  background: #f1f5f8;
+}
+
+#player-wrapper {
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+  padding-top: 35%;
+}
+#player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* CITAT */
+
+.blockquote {
+  padding: 60px 80px 40px;
+  position: relative;
+}
+.blockquote p {
+  font-family: "Utopia-italic";
+  font-size: 35px;
+  font-weight: 700px;
+  text-align: center;
+}
+.blockquote:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  top: 0;
+
+  content: "\f10d";
+  font-size: 200px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.blockquote::after {
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  border-bottom: 3px solid rgb(24, 201, 186);
+  height: 3px;
+  width: 200px;
+}

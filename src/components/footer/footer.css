@@ -1,0 +1,78 @@
+/* Footer*/
+div h3 {
+  color: rgb(0, 0, 0);
+  font-size: medium;
+}
+
+.footer {
+  overflow: hidden;
+  padding: 4em 0em;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+  position: relative;
+}
+
+.footer .footer-content {
+  display: flex;
+  height: 200px;
+}
+
+.footer .footer-content .footer-Section {
+  flex: 1;
+  /* border: 1px solid white; */
+}
+
+/* Copyrigh*/
+
+.copyright {
+  height: 50px;
+  width: 100%;
+  padding-top: 20px;
+  position: absolute;
+}
+
+.copyright p {
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.404);
+}
+
+.copyright a {
+  text-decoration: none;
+  color: rgba(12, 10, 10, 0.253);
+}
+
+.social-icons {
+  padding-left: 5em;
+  display: flex;
+  color: white;
+  height: 1.5em;
+  width: 2em;
+  font-size: 18pt;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+.social-icons a:hover {
+  color: var(--clr-primary-7);
+}
+
+.logo-footer {
+  padding-left: 1em;
+  margin-right: 150px;
+}
+.logo-footer h1 {
+  letter-spacing: 0.1em;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.logo-footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
