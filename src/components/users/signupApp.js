@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import bc_Image from "../../assets/sgnup_background1.jpg";
 import SignUp from "../../pages/signup";
-import { AuthProvider } from "../contexts/AuthContext";
+import { AuthProvider } from "../contexts/authContext";
 
 function SignUpApp() {
   return (

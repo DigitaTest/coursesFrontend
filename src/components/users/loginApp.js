@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import bc_Image from "../../assets/sgnup_background1.jpg";
 import Login from "../../pages/login";
-import { AuthProvider } from "../contexts/AuthContext";
+import { AuthProvider } from "../contexts/authContext";
 
 function LoginApp() {
   return (
