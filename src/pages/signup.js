@@ -1,6 +1,6 @@
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import React, { useState, useRef } from "react";
-import { useAuth } from "../components/contexts/AuthContext";
+import { useAuth } from "../components/contexts/authContext";
 import { Link, useHistory } from "react-router-dom";
 
 function SignUp() {
