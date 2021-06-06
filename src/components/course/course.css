@@ -1,0 +1,97 @@
+/* KURS PAGE */
+
+section {
+    background-color: var(--dLab-beige);
+}
+
+.courseInfo {
+    position: relative;
+    text-align: left;
+    color: var(--dLab-white);
+    overflow: hidden;
+    padding: 2em;
+    background: var(--dLab-marine-blue);
+  }
+  
+  .courseInfoHead {
+      padding: 1em;
+  }
+
+  .courseInfoRating {
+      padding: 1em;
+  }
+.ratingDiv {
+    float: left;
+    padding-right: 0.3em;
+}
+.courseInfoPredavaci {
+    padding-left: 1em;
+    position: relative;
+    top: 0.5em;
+    text-align: left;
+    width: 150px;
+}
+
+.tehnical-details {
+    position: relative;
+    padding-left: 1em;
+}
+
+.tehnical-details-update {
+    float: left;
+    width: 200px;
+}
+
+.tehnical-details-language{
+    width: 200px;
+}
+  #player-wrapper {
+    /* display: flex;
+    justify-content: center; */
+    position: relative;
+    padding-top: 35%;
+  }
+  #player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+  .sellingCard {
+      z-index: 999;
+      width: 30%;
+      float: right;
+      position: absolute;
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      background-color: var(--dLab-white);
+      border-radius: 0.5em;
+  }
+
+  .sellingCardVideo {
+      margin: 0em auto;
+      padding: 0.2em;
+      width: 95%;
+  }
+
+  .videoPlayer {
+    margin: 0em auto;
+    width: 100%;
+    height: 100%;
+  }
+
+#video {
+    border-radius: 1em;
+}
+
+.sellingCardOffer{
+    padding: 2em;
+    margin: 0em auto;
+}
+
+.sellingCardOffer-buttons{
+    padding: 0em 3em;
+
+}

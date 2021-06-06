@@ -9,13 +9,15 @@
   --dLab-rose: #F1D2B6;
   --dLab-light-blue: #C7D5ED;
   --dLab-blue: #7697CE;
+  --dLab-beige: #f8edeb;
+  --dLab-white: #FFFFFF;
 }
 
 
 body {
   margin: 0px;
   padding: 0px;
-  background: #ffffff;
+  background: var(--dLab-beige);
   /* background: #4c5748; */
   font-family: "Oswald", "Source Sans Pro", sans-serif;
   font-size: 12pt;
@@ -444,27 +446,6 @@ ul.style2 li:first-child {
   top: 5px;
 }
 
-/* KURS PAGE */
-
-#courseInfo {
-  text-align: center;
-  color: black;
-  overflow: hidden;
-  padding: 5em 0em;
-  background: #f1f5f8;
-}
-
-#player-wrapper {
-  /* display: flex;
-  justify-content: center; */
-  position: relative;
-  padding-top: 35%;
-}
-#player {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 /* CITAT */
 
@@ -497,4 +478,46 @@ ul.style2 li:first-child {
   border-bottom: 3px solid rgb(24, 201, 186);
   height: 3px;
   width: 200px;
+}
+
+
+/* Zvezdice */
+
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 19px;
+  width: 120px;
+  margin: 0 auto;
+  position: relative;
+  float: left;
+  text-shadow: 0 1px 0 #a2a2a2;
+} 
+
+.star-ratings-css::before { 
+  content: '★★★★★';
+  opacity: .3;
+}
+
+[title=".125"]::after {
+  width: 12.5%;
+}
+[title=".875"]::after {
+  width: 87.5%;
+}
+[title=".1000"]::after {
+  width: 100%;
+}
+
+.star-ratings-css::after {
+  color: gold;
+  content: '★★★★★';
+  text-shadow: 0 1px 0 #ab5414;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  left: 0;
+  top:0;
+  width: attr(rating);
+  overflow: hidden;
 }

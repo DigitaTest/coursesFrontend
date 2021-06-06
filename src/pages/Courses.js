@@ -1,5 +1,5 @@
 import react, { useState } from 'react'
-import './pages.css'
+import './courses.css'
 import data from '../assets/dataKursevi'
 import { Link } from 'react-router-dom'
 
@@ -10,7 +10,7 @@ const Courses = () => {
       <main id='page-wrapper'>
 
         <div className='containerCourses'>
-        <h2>Svi kursevi na jednom mestu!</h2>
+        <h1>Svi kursevi na jednom mestu!</h1>
 
             {courses.map((course) => {
               return (
@@ -29,14 +29,16 @@ const Courses = () => {
                     <div className="containerCourseCardParag">
                       <p>{course.desc}</p>
                     </div>
-
-                      <div className="star-ratings-css" title=".875"></div>
+                    <div>
                       <div  className="ratings">
                         <p>{course.rating}</p>
                       </div>
+                      <div className="star-ratings-css" title=".875"></div>
                       <div  className="numberOfUsers">
                         <p>({course.numOfUsers} - korisnika)</p>
                       </div>
+
+                    </div>
                         <div className="containerCourseCardPrice">
                           <h1>{course.price}</h1>
                         </div>
