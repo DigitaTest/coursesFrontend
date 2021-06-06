@@ -1,4 +1,4 @@
-import Courses from "./courses";
+import Courses from "./Courses";
 import HeaderDesc from "../components/header/headerDesc";
 import Team from "../components/team/team";
 
