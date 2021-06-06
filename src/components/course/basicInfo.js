@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import data from "../../assets/data";
+import data from "../../assets/dataKursevi";
 import { useParams } from "react-router-dom";
 
 const BasicInfo = () => {

@@ -1,5 +1,5 @@
 import ReactPlayer from "react-player";
-import data from "../../assets/data";
+import data from "../../assets/dataKursevi";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 

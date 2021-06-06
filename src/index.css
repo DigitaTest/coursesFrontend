@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import "../node_modules/font-awesome/css/font-awesome.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root{
+  --dLab-marine-blue: #393852;
+  --dLab-orange: #F2A35E;
+  --dLab-rose: #F1D2B6;
+  --dLab-light-blue: #C7D5ED;
+  --dLab-blue: #7697CE;
+}
+
+
 body {
   margin: 0px;
   padding: 0px;
@@ -32,7 +43,7 @@ ul {
 }
 
 p {
-  line-height: 180%;
+  line-height: 1.6;
 }
 
 a {
