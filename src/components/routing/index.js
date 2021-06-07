@@ -55,7 +55,10 @@ const Routing = () => {
         <Route exact path="/login">
           <LoginApp />
         </Route>
-        <Route path="/course/:id" children={<Course />}></Route>
+        <Route path="/course/:id">
+          <Navbar />
+          <Course />
+        </Route>
         <Route path="*">
           <Error />
         </Route>
