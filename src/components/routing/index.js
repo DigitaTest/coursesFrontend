@@ -8,7 +8,7 @@ import FAQ from "../../pages/FAQ";
 import Blog from "../../pages/blog";
 import PrivacyPolicy from "../../pages/privacyPolicy";
 import UserProfile from "../users/userProfile";
-import Courses from "../../pages/courses";
+import Courses from "../../pages/Courses";
 import Course from "../course/course";
 import SignUpApp from "../users/signupApp";
 import LoginApp from "../users/loginApp";
@@ -55,7 +55,10 @@ const Routing = () => {
         <Route exact path="/login">
           <LoginApp />
         </Route>
-        <Route path="/course/:id" children={<Course />}></Route>
+        <Route path="/course/:id">
+          <Navbar />
+          <Course />
+        </Route>
         <Route path="*">
           <Error />
         </Route>
