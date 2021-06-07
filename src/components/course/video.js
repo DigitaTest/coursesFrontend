@@ -1,20 +1,14 @@
 import ReactPlayer from "react-player";
-import data from "../../assets/data";
+import data from "../../assets/dataKursevi";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-const VidPlayer = () => {
-  const [video, setVideo] = useState("");
-  const { id } = useParams();
-  //Postavljamo video  tacnog kursa na koji je korisnik kliknuo
-  useEffect(() => {
-    const newCourse = data.find((course) => course.id === parseInt(id));
-    setVideo(newCourse.video);
-  }, []);
+const VidPlayer = ({video}) => {
+
   return (
-    <div id="player-wrapper">
+    <div className="videoPlayer">
       <ReactPlayer
-        id="player"
+        id="video"
         url={video}
         width="100%"
         height="100%"
@@ -22,6 +16,7 @@ const VidPlayer = () => {
         onContextMenu={(e) => e.preventDefault()}
       />
     </div>
+      
   );
 };
 
