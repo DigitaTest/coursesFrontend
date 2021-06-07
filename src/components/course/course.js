@@ -4,22 +4,30 @@ import BasicInfo from "./basicInfo";
 import VidPlayer from "./video";
 import './course.css'
 import data from "../../assets/dataKursevi";
+import courseInfoData from "../../assets/courseInfo";
 
 const Course = () => {
   const [course, setCourse] = useState({id:'', name:'', image:'', desc:'', author:'', 
   price:'', rating:'', language:'', numOfUsers:'', update:'', video:''});
+  
+  const[courseInfo, setCourseInfo] = useState({id: '', name: ''});
+
   const { id } = useParams();
 
   //Postavljamo ime opis i sliku tacnog kursa na koji je korisnik kliknuo
   useEffect(() => {
-    const newCourse = data.find((cours) => cours.id === parseInt(id));
-    setCourse(newCourse);
+    // const newCourse = ;
+    setCourse(data.find((cours) => cours.id === parseInt(id)));
+
+
+    setCourseInfo(courseInfoData.find((courseInf) => courseInf.id === parseInt(id)));
   }, []);
 
 
   return (
     <>
       <section>
+        <h1>{courseInfo.name}</h1>
         {/* podaci o kursu, potrebno dodati potrebna predznanja, ''kurs je idealan za ..'' itd. */}
       <BasicInfo  {...course}/>
       <div className="sellingCard">
