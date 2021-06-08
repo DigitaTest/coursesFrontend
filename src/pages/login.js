@@ -10,7 +10,6 @@ export default function Login() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const history = useHistory();
-  const { currentUser } = useAuth();
 
   async function handleSubmit(e) {
     e.preventDefault();

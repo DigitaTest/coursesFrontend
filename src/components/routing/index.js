@@ -7,8 +7,8 @@ import ContactUs from "../../pages/contactUs";
 import FAQ from "../../pages/FAQ";
 import Blog from "../../pages/blog";
 import PrivacyPolicy from "../../pages/privacyPolicy";
-import UserProfile from "../users/userProfile";
-import Courses from "../../pages/Courses";
+import UserApp from "../users/userApp";
+import Courses from "../../pages/courses";
 import Course from "../course/course";
 import SignUpApp from "../users/signupApp";
 import LoginApp from "../users/loginApp";
@@ -38,8 +38,7 @@ const Routing = () => {
           <Blog />
         </Route>
         <Route path="/user">
-          <Navbar />
-          <UserProfile />
+          <UserApp />
         </Route>
         <Route path="/FAQ">
           <Navbar />
