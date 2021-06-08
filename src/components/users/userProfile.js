@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../contexts/authContext";
-import { Card, Button, Alert } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 
-function UserProfile() {
+export function UserProfile() {
   const [error, setError] = useState("");
   // Iz nekog razloga jebenog error ovde imamo :(
-  const { logout, currentUser } = useAuth();
   const history = useHistory();
+  const { currentUser } = useAuth();
 
   async function handleLogout() {
     setError("");
     try {
-      await logout();
+      // await logout();
       // Kad se user log-outuje vracam ga na login page
       history.push("/login");
     } catch {
@@ -24,27 +24,17 @@ function UserProfile() {
     <>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Moj Profil</h2>
-          {/* U slucaju da nam failuje logout */}
+          <h2 className="text-center mb-4">Profile</h2>
           {error && <Alert variant="danger">{error}</Alert>}
-          <strong>Email: </strong>
-          {currentUser.email}
-          <div className="row">
-            <div className="col text-center">
-              <Link
-                to="/update-profile"
-                className="btn btn-primary w-30 mt-3 text-center"
-              >
-                {" "}
-                Ažuriraj profil{" "}
-              </Link>
-            </div>
-          </div>
+          <strong>Email:</strong> {currentUser.email}
+          <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
+            Ažuriraj profil
+          </Link>
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
         <Button variant="link" onClick={handleLogout}>
-          Odjavi me
+          Log Out
         </Button>
       </div>
     </>
