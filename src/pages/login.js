@@ -6,11 +6,10 @@ import { Link, useHistory } from "react-router-dom";
 export default function Login() {
   const emailRef = useRef();
   const passwordRef = useRef();
-  const { login, logout, currentUser } = useAuth();
+  const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const history = useHistory();
-  console.log(currentUser.email);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -34,7 +33,6 @@ export default function Login() {
           <h2 className="text-center mb-4">Prijavi se</h2>
           {/* //boostrap verzija pop-up errora: */}
           {error && <Alert variant="danger">{error}</Alert>}
-          {currentUser.email}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
               <Form.Label>Email: </Form.Label>
