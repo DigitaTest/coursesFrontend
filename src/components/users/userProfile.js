@@ -7,12 +7,12 @@ export function UserProfile() {
   const [error, setError] = useState("");
   // Iz nekog razloga jebenog error ovde imamo :(
   const history = useHistory();
-  const { currentUser } = useAuth();
+  const { currentUser, logout } = useAuth();
 
   async function handleLogout() {
     setError("");
     try {
-      // await logout();
+      await logout();
       // Kad se user log-outuje vracam ga na login page
       history.push("/login");
     } catch {

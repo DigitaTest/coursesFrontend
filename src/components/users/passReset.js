@@ -1,26 +1,25 @@
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import React, { useState, useRef } from "react";
-import { useAuth } from "../components/contexts/authContext";
-import { Link, useHistory } from "react-router-dom";
+import { useAuth } from "../contexts/authContext";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const emailRef = useRef();
-  const { login } = useAuth();
+  const { passReset } = useAuth();
   const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
 
   async function handleSubmit(e) {
     e.preventDefault();
     try {
+      setMessage("");
       setError("");
-      //Ovim disablujemo signup dugme dok se account kreira, da ne bi doslo do visestrukog kreiranja acc-a. Pogledaj disabled property button-a
       setLoading(true);
-      await login(emailRef.current.value);
-      //Ukoliko login uspe saljemo korisnika na homepage
-      history.push("/");
+      await passReset(emailRef.current.value);
+      setMessage("Proverite vaš email!");
     } catch {
-      setError("Pokušajte ponovo.");
+      setError("Resetovanje lozinke nije uspelo, pokušajte ponovo.");
     }
     setLoading(false);
   }
@@ -30,8 +29,8 @@ export default function Login() {
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Zaboravljena lozinka?</h2>
-          {/* //boostrap verzija pop-up errora: */}
           {error && <Alert variant="danger">{error}</Alert>}
+          {message && <Alert variant="success">{message}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
               <Form.Label>Email: </Form.Label>

@@ -9,10 +9,11 @@ import PrivacyPolicy from "../../pages/privacyPolicy";
 import UserProfile from "../users/userProfile";
 import Courses from "../../pages/courses";
 import Course from "../course/course";
-import SignUp from "../../pages/signup";
-import Login from "../../pages/login";
+import SignUp from "../../components/users/signup";
+import Login from "../../components/users/login";
 import PrivateRoute from "../routing/privateRoute";
-import PassReset from "../../pages/passReset";
+import PassReset from "../../components/users/passReset";
+import UpdateProfile from "../../components/users/updateProfile";
 
 const Routing = () => {
   return (
@@ -52,6 +53,7 @@ const Routing = () => {
         <Route exact path="/login">
           <Login />
         </Route>
+        <PrivateRoute path="/update-profile" component={UpdateProfile} />
         <Route path="/course/:id">
           <Navbar />
           <Course />
