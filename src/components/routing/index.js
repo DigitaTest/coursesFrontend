@@ -3,20 +3,22 @@ import Navbar from "../header/navbar";
 import Error from "../../pages/Error";
 import Home from "../../pages/home";
 import Team from "../team/team";
-import ContactUs from "../../pages/contactUs";
 import FAQ from "../../pages/FAQ";
 import Blog from "../../pages/blog";
 import PrivacyPolicy from "../../pages/privacyPolicy";
-import UserApp from "../users/userApp";
+import UserProfile from "../users/userProfile";
 import Courses from "../../pages/courses";
 import Course from "../course/course";
-import SignUpApp from "../users/signupApp";
-import LoginApp from "../users/loginApp";
+import SignUp from "../../pages/signup";
+import Login from "../../pages/login";
+import PrivateRoute from "../routing/privateRoute";
+import PassReset from "../../pages/passReset";
 
 const Routing = () => {
   return (
     <>
       <Switch>
+        <PrivateRoute path="/user" component={UserProfile} />
         <Route exact path="/">
           <Navbar />
           <Home />
@@ -24,10 +26,6 @@ const Routing = () => {
         <Route exact path="/courses">
           <Navbar />
           <Courses />
-        </Route>
-        <Route path="/contact">
-          <Navbar />
-          <ContactUs />
         </Route>
         <Route path="/team">
           <Navbar />
@@ -37,8 +35,8 @@ const Routing = () => {
           <Navbar />
           <Blog />
         </Route>
-        <Route path="/user">
-          <UserApp />
+        <Route path="/pass-reset">
+          <PassReset />
         </Route>
         <Route path="/FAQ">
           <Navbar />
@@ -49,10 +47,10 @@ const Routing = () => {
           <PrivacyPolicy />
         </Route>
         <Route path="/signup">
-          <SignUpApp />
+          <SignUp />
         </Route>
         <Route exact path="/login">
-          <LoginApp />
+          <Login />
         </Route>
         <Route path="/course/:id">
           <Navbar />

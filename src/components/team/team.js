@@ -8,14 +8,14 @@ const Team = () => {
     <>
       <main id="page-wrapper">
         <div id="featured">
-          <blockquote class="blockquote">
+          <blockquote className="blockquote">
             <p>
               You don't have to be great to start, but you have to start to
               become great.
             </p>
           </blockquote>
           <br />
-          <div class="box">
+          <div className="box">
             <img
               src={groupPhoto}
               alt=""

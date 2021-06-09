@@ -50,9 +50,9 @@ function SignUp() {
               <Form.Label>Potvrdi lozinku: </Form.Label>
               <Form.Control type="password" ref={passwordConfirmRef} required />
             </Form.Group>
-            <button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} className="w-100" type="submit">
               Sign Up
-            </button>
+            </Button>
           </Form>
         </Card.Body>
       </Card>

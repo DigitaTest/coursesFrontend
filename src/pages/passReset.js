@@ -1,11 +1,10 @@
-import React, { useState, useRef } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
+import React, { useState, useRef } from "react";
 import { useAuth } from "../components/contexts/authContext";
 import { Link, useHistory } from "react-router-dom";
 
 export default function Login() {
   const emailRef = useRef();
-  const passwordRef = useRef();
   const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -17,7 +16,7 @@ export default function Login() {
       setError("");
       //Ovim disablujemo signup dugme dok se account kreira, da ne bi doslo do visestrukog kreiranja acc-a. Pogledaj disabled property button-a
       setLoading(true);
-      await login(emailRef.current.value, passwordRef.current.value);
+      await login(emailRef.current.value);
       //Ukoliko login uspe saljemo korisnika na homepage
       history.push("/");
     } catch {
@@ -30,7 +29,7 @@ export default function Login() {
     <>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Prijavi se</h2>
+          <h2 className="text-center mb-4">Zaboravljena lozinka?</h2>
           {/* //boostrap verzija pop-up errora: */}
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
@@ -38,16 +37,12 @@ export default function Login() {
               <Form.Label>Email: </Form.Label>
               <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Lozinka: </Form.Label>
-              <Form.Control type="password" ref={passwordRef} required />
-            </Form.Group>
             <Button disabled={loading} className="w-100" type="submit">
-              Prijavi se
+              Resetuj password
             </Button>
           </Form>
           <div className="w-100 text-center mt-3">
-            <Link to="pass-reset">Zaboravljena lozinka?</Link>
+            <Link to="login">Login</Link>
           </div>
         </Card.Body>
       </Card>
