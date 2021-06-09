@@ -1,10 +1,6 @@
 import ReactPlayer from "react-player";
-import data from "../../assets/dataKursevi";
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 
-const VidPlayer = ({video}) => {
-
+const VidPlayer = ({ video }) => {
   return (
     <div className="videoPlayer">
       <ReactPlayer
@@ -16,7 +12,6 @@ const VidPlayer = ({video}) => {
         onContextMenu={(e) => e.preventDefault()}
       />
     </div>
-      
   );
 };
 

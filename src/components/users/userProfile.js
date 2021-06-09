@@ -1,5 +1,5 @@
-import React, { useState, useContext } from "react";
-import { Form, Button, Card, Alert } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../contexts/authContext";
 import { Link, useHistory } from "react-router-dom";
 
@@ -7,12 +7,12 @@ export function UserProfile() {
   const [error, setError] = useState("");
   // Iz nekog razloga jebenog error ovde imamo :(
   const history = useHistory();
-  const { currentUser } = useAuth();
+  const { currentUser, logout } = useAuth();
 
   async function handleLogout() {
     setError("");
     try {
-      // await logout();
+      await logout();
       // Kad se user log-outuje vracam ga na login page
       history.push("/login");
     } catch {

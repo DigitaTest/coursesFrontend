@@ -33,7 +33,7 @@ const Course = () => {
     setCourseInfo(
       courseInfoData.find((courseInf) => courseInf.id === parseInt(id))
     );
-  }, []);
+  }, [id]);
 
   return (
     <>

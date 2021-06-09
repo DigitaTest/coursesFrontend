@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import "../node_modules/font-awesome/css/font-awesome.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
-:root{
+:root {
   --dLab-marine-blue: #393852;
-  --dLab-orange: #F2A35E;
-  --dLab-rose: #F1D2B6;
-  --dLab-light-blue: #C7D5ED;
-  --dLab-blue: #7697CE;
+  --dLab-orange: #f2a35e;
+  --dLab-rose: #f1d2b6;
+  --dLab-light-blue: #c7d5ed;
+  --dLab-blue: #7697ce;
   --dLab-beige: #f8edeb;
-  --dLab-white: #FFFFFF;
+  --dLab-white: #ffffff;
 }
-
 
 body {
   margin: 0px;
@@ -446,7 +445,6 @@ ul.style2 li:first-child {
   top: 5px;
 }
 
-
 /* CITAT */
 
 .blockquote {
@@ -480,7 +478,6 @@ ul.style2 li:first-child {
   width: 200px;
 }
 
-
 /* Zvezdice */
 
 .star-ratings-css {
@@ -492,11 +489,11 @@ ul.style2 li:first-child {
   position: relative;
   float: left;
   text-shadow: 0 1px 0 #a2a2a2;
-} 
+}
 
-.star-ratings-css::before { 
-  content: '★★★★★';
-  opacity: .3;
+.star-ratings-css::before {
+  content: "★★★★★";
+  opacity: 0.3;
 }
 
 [title=".125"]::after {
@@ -511,13 +508,13 @@ ul.style2 li:first-child {
 
 .star-ratings-css::after {
   color: gold;
-  content: '★★★★★';
+  content: "★★★★★";
   text-shadow: 0 1px 0 #ab5414;
   position: absolute;
   z-index: 1;
   display: block;
   left: 0;
-  top:0;
+  top: 0;
   width: attr(rating);
   overflow: hidden;
 }

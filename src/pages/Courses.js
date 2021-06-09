@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import "./courses.css";
 import data from "../assets/dataKursevi";
 import { Link } from "react-router-dom";

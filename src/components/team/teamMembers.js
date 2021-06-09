@@ -50,7 +50,7 @@ const TeamMembers = () => {
               <img src={image} alt={name} className="person-img" />
               <h4>{name}</h4>
               <p className="title">{title}</p>
-              <quote className="text">{quote}</quote>
+              <div className="blockquote">{quote}</div>
             </article>
           );
         })}
