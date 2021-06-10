@@ -1,7 +1,7 @@
 import React from "react";
 import TeamMembers from "./teamMembers";
 import "./team.css";
-import groupPhoto from "../../assets/groupPhoto.jpg";
+import groupPhoto from "../../assets//jpegs/groupPhoto.jpg";
 
 const Team = () => {
   return (

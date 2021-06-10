@@ -5,7 +5,6 @@ import { Link, useHistory } from "react-router-dom";
 
 export function UserProfile() {
   const [error, setError] = useState("");
-  // Iz nekog razloga jebenog error ovde imamo :(
   const history = useHistory();
   const { currentUser, logout } = useAuth();
 

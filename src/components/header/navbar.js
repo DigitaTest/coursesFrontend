@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { TiUser } from "react-icons/ti";
 import { ImHome3 } from "react-icons/im";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/pngs/logo.png";
 const Navbar = () => {
   return (
     <>
