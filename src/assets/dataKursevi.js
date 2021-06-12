@@ -3,7 +3,7 @@ const data = [
   {
     id: 1,
     name: "Kurs JavaScript-a!",
-    author: "1",
+    instructor: "1",
     rating: "5.00",
     update: "11/2020",
     language: "srpski, hrvatski, kineski",
@@ -18,7 +18,7 @@ const data = [
   {
     id: 2,
     name: "Kurs iz Pythona!",
-    author: "David",
+    instructor: "David",
     rating: "5.00",
     update: "11/2020",
     language: "srpski, hrvatski, kineski",
@@ -33,7 +33,7 @@ const data = [
   {
     id: 3,
     name: "Kurs iz Jave!",
-    author: "Laza",
+    instructor: "Laza",
     rating: "5.00",
     update: "11/2020",
     language: "srpski, hrvatski, kineski",
@@ -47,7 +47,7 @@ const data = [
   {
     id: 4,
     name: "Kurs iz GoLang-a!",
-    author: "Dubravko",
+    instructor: "Dubravko",
     rating: "5.00",
     update: "11/2020",
     language: "srpski, hrvatski, kineski",

@@ -6,7 +6,7 @@ const BasicInfo = ({
   name,
   image,
   desc,
-  author,
+  instructor,
   price,
   rating,
   language,
@@ -28,7 +28,7 @@ const BasicInfo = ({
         </div>
 
         <div className="courseInfoPredavaci">
-          <p>Predavač: {author}</p>
+          <p>Predavač: {instructor}</p>
         </div>
 
         <div className="tehnical-details">

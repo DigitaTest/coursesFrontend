@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import data from "./data";
+import data from "../../assets/teamMembers";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const TeamMembers = () => {

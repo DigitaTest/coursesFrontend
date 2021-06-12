@@ -7,7 +7,7 @@ import FAQ from "../../pages/FAQ";
 import Blog from "../../pages/blog";
 import PrivacyPolicy from "../../pages/privacyPolicy";
 import UserProfile from "../users/userProfile";
-import Courses from "../../pages/courses";
+import Courses from "../../pages/Courses";
 import Course from "../course/course";
 import SignUp from "../../components/users/signup";
 import Login from "../../components/users/login";

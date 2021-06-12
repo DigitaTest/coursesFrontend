@@ -12,7 +12,7 @@ const Course = () => {
     name: "",
     image: "",
     desc: "",
-    author: "",
+    instructor: "",
     price: "",
     rating: "",
     language: "",
