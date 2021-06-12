@@ -13,6 +13,9 @@ const Courses = () => {
 
           {courses.map((course) => {
             return (
+
+
+              <Link to={`/course/${course.id}`}>
               <div key={course.id} className="containerCourseCard">
                 <div className="containerCourseCardImage">
                   <img
@@ -45,12 +48,13 @@ const Courses = () => {
                 <div className="containerCourseCardPrice">
                   <h1>{course.price}</h1>
                 </div>
-                <div>
-                  <Link to={`/course/${course.id}`} className="button">
+                {/* <div>
+                  
                     Saznaj više
-                  </Link>
-                </div>
+                  
+                </div> */}
               </div>
+              </Link>
             );
           })}
         </div>
