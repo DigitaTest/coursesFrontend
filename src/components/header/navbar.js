@@ -3,33 +3,45 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { TiUser } from "react-icons/ti";
 import { ImHome3 } from "react-icons/im";
-import logo from "../../assets/pngs/logo.png";
+import logo1 from "../../assets/pngs/logo1.png";
 const Navbar = () => {
   return (
     <>
-      <div id="header" className="container">
+      <nav className="navbar">
+        <div className="navbarContainer">
+        
+        
         <div id="logo">
           <Link to="/">
-            <img src={logo} alt="" />
+            <img height="90px" width="90px" src={logo1} alt="" />
           </Link>
         </div>
-        <section id="menu">
-          <ul>
+
+          <ul className="leftSection">
             <li>
-              <Link to="/">
-                <ImHome3 />
-              </Link>
+              <Link to="/courses">
+                <div className="leftSectionLinks">
+                  Kursevi
+                </div>
+                </Link>
             </li>
             <li>
-              <Link to="/courses">Kursevi</Link>
+              <Link to="/team">
+              <div className="leftSectionLinks">
+                    O nama
+                </div>
+                </Link>
             </li>
             <li>
-              <Link to="/team">O nama</Link>
-            </li>
-            <li>
-              <Link to="/contact">Kontakt</Link>
+              <Link to="/contact">
+                <div className="leftSectionLinks">
+                  Kontakt
+                </div>
+                </Link>
             </li>
           </ul>
+
+          {/* <div>
           <ul>
             <li>
               <Link to="/user">
@@ -47,7 +59,9 @@ const Navbar = () => {
               <Link to="/signup">REGISTRUJ SE </Link>
             </button>
           </ul>
-          <ul>
+          </div> */}
+
+          <ul className="rightSection">
             <li>
               <FaFacebook />
             </li>
@@ -61,8 +75,9 @@ const Navbar = () => {
               <FaTwitter />
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+        
+      </nav>
     </>
   );
 };

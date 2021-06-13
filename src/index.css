@@ -5,10 +5,20 @@
 
 :root {
   --dLab-marine-blue: #393852;
+  --dLab-grey: #F0F0F0;
+
   --dLab-orange: #f2a35e;
-  --dLab-rose: #f1d2b6;
+  --dLab-orange-oposite: #eb9e91;
+
+  --dLab-talk: #F1D2B6;
+  --dLab-red-grape: #ec6952;
+
   --dLab-light-blue: #c7d5ed;
+  --dLab-light-olive: #8ea6a4;
+
   --dLab-blue: #7697ce;
+  --dLab-ciano: #5aada5;
+
   --dLab-beige: #f8edeb;
   --dLab-white: #ffffff;
 }
@@ -278,24 +288,73 @@ ul.style2 li:first-child {
   background: url(assets/pngs/pic02.png) no-repeat center;
   height: 380px;
   background-size: 97% auto;
+  background-color: var(--dLab-marine-blue);
 }
 
-#header {
-  overflow: hidden;
-  position: relative;
-  padding: 3em 0em;
-}
 
 /* Logo (kad se doda)*/
 /* Voditi racuna ---- logo ce se koristiti u headeru / footeru / i svim ostalim komponentama - ne dodavati mu staticke parametre*/
 
-#logo {
-  position: absolute;
+/* pocetak navbara */
+
+.navbar {
+  background-color: var(--dLab-marine-blue);
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
+  padding: 1em;
+  height: 7em;
+  margin: auto;
+
+}
+.navbarContainer {
+  
+  
 }
 
-#logo h1 {
+.leftSection {
+  margin-top: 0.7em;
+  margin-left: 15em;
+  display: flex;
+  place-content: space-between;
+  padding: 0 0.5em;
+}
+
+.leftSection li {
+  
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.leftSectionLinks {
+  color: white;
+}
+
+.rightSection {
+  margin-top:  0.7em;
+  display: flex;
+}
+.rightSection li {
+  color: white !important;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+#logo {
+  position: absolute;
+  top: 0.5em;
+  left: 4em;
+}
+
+/* #logo h1 {
   letter-spacing: 0.1em;
   font-size: 2.5em;
   font-weight: 600;
@@ -305,11 +364,11 @@ ul.style2 li:first-child {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-}
+} */
 
 /* Menu*/
 
-#menu {
+/* #menu {
   position: absolute;
   top: 2em;
   right: 0;
@@ -334,30 +393,19 @@ ul.style2 li:first-child {
   text-transform: uppercase;
   font-size: 0.9em;
   color: #f2a35e;
-}
+} */
 
-/* Banner */
 
-#banner {
-  overflow: hidden;
-  padding: 3em 0em 2em 0em;
-  margin-bottom: 5em;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.08); */
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-}
+/* kraj navbaraaa */
 
-#banner a {
-  color: rgba(255, 255, 255, 0.7);
-}
+
 
 /* Main*/
 
 #page-wrapper {
   overflow: hidden;
   padding: 5em 0em;
-  background: rgb(209, 174, 99);
+  background: var(--dLab-greyd);
 }
 
 /* Featured*/

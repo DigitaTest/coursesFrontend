@@ -1,14 +1,18 @@
 /* Footer*/
 div h3 {
-  color: rgb(0, 0, 0);
+  color: var(--dLab-grey);
   font-size: medium;
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   overflow: hidden;
   padding: 4em 0em;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-
+  border-top: 1px solid;
+  background-color: var(--dLab-marine-blue);
+  color: var(--dLab-grey);
   position: relative;
 }
 
@@ -36,12 +40,12 @@ div h3 {
   text-align: center;
   text-transform: uppercase;
   font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.404);
+  color: var(--dLab-grey);
 }
 
 .copyright a {
   text-decoration: none;
-  color: rgba(12, 10, 10, 0.253);
+  color: var(--dLab-grey);
 }
 
 .social-icons {
@@ -74,5 +78,5 @@ div h3 {
 .logo-footer a {
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(0, 0, 0);
+  color: var(--dLab-grey);
 }
