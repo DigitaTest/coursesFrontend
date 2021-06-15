@@ -26,7 +26,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: var(--dLab-beige);
+  background: var(--dLab-grey);
   /* background: #4c5748; */
   font-family: "Oswald", "Source Sans Pro", sans-serif;
   font-size: 12pt;
@@ -342,6 +342,7 @@ ul.style2 li:first-child {
   display: flex;
   place-content: space-between;
 }
+
 .rightSection li {
   color: white !important;
   text-decoration: none;
@@ -365,58 +366,14 @@ ul.style2 li:first-child {
   left: 4em;
 }
 
-/* #logo h1 {
-  letter-spacing: 0.1em;
-  font-size: 2.5em;
-  font-weight: 600;
-}
-
-#logo a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-} */
-
-/* Menu*/
-
-/* #menu {
-  position: absolute;
-  top: 2em;
-  right: 0;
-  color: #000000;
-}
-
-#menu ul {
-  display: inline-block;
-}
-
-#menu li {
-  display: block;
-  float: left;
-  text-align: center;
-}
-
-#menu li a,
-#menu li span {
-  padding: 1em 1.5em;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  color: #f2a35e;
-} */
-
-
-/* kraj navbaraaa */
-
-
 
 /* Main*/
 
 #page-wrapper {
   overflow: hidden;
-  padding: 5em 0em;
-  background: var(--dLab-greyd);
+  background: var(--dLab-grey);
+  width: 100%;
+  padding-bottom: 2em;
 }
 
 /* Featured*/

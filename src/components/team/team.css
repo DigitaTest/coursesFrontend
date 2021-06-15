@@ -2,6 +2,7 @@
   width: 90vw;
   margin: 5rem auto;
   max-width: var(--max-width);
+  background-color: var(--dLab-light-blue);
 }
 
 .title {
