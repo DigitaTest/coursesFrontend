@@ -304,12 +304,12 @@ ul.style2 li:first-child {
   left: 0;
   z-index: 999;
   padding: 1em;
-  height: 7em;
+  height: 6em;
   margin: auto;
 
 }
 .navbarContainer {
-  
+  display: flex;
   
 }
 
@@ -336,16 +336,27 @@ ul.style2 li:first-child {
 }
 
 .rightSection {
-  margin-top:  0.7em;
+  position: absolute;
+  margin-top: 0.5em;
+  right: 6em;
   display: flex;
+  place-content: space-between;
 }
 .rightSection li {
   color: white !important;
   text-decoration: none;
   display: block;
   padding: .5em;
-  font-size: 1.3em;
   text-align: right;
+}
+.line {
+  color: var(--dLab-orange);
+  font-size: 1.8em;
+}
+
+.userIcon {
+  color: var(--dLab-orange);
+  font-size: 1.7em;
 }
 
 #logo {

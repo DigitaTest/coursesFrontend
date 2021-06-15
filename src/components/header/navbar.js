@@ -4,6 +4,8 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { TiUser } from "react-icons/ti";
 import { ImHome3 } from "react-icons/im";
 import logo1 from "../../assets/pngs/logo1.png";
+import { BiUser } from "react-icons/bi";
+
 const Navbar = () => {
   return (
     <>
@@ -13,7 +15,7 @@ const Navbar = () => {
         
         <div id="logo">
           <Link to="/">
-            <img height="90px" width="90px" src={logo1} alt="" />
+            <img height="80px" width="80px" src={logo1} alt="" />
           </Link>
         </div>
 
@@ -25,6 +27,7 @@ const Navbar = () => {
                 </div>
                 </Link>
             </li>
+            <li className="line">|</li>
             <li>
               <Link to="/team">
               <div className="leftSectionLinks">
@@ -32,6 +35,7 @@ const Navbar = () => {
                 </div>
                 </Link>
             </li>
+            <li className="line">|</li>
             <li>
               <Link to="/contact">
                 <div className="leftSectionLinks">
@@ -41,38 +45,13 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* <div>
-          <ul>
-            <li>
-              <Link to="/user">
-                <TiUser id="user-Icon" />
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <button className="btn-login">
-              <Link to="login">PRIJAVI SE </Link>
-            </button>
-          </ul>
-          <ul>
-            <button className="btn-signup">
-              <Link to="/signup">REGISTRUJ SE </Link>
-            </button>
-          </ul>
-          </div> */}
-
           <ul className="rightSection">
             <li>
-              <FaFacebook />
-            </li>
-            <li>
-              <FaInstagram />
-            </li>
-            <li>
-              <FaYoutube />
-            </li>
-            <li>
-              <FaTwitter />
+              <Link to="/user">
+                <div className="userIcon">
+                  <BiUser />
+                </div>
+              </Link>
             </li>
           </ul>
         </div>
