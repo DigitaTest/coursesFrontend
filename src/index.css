@@ -3,6 +3,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&family=Viaoda+Libre&display=swap');
+/* font-family: 'Stint Ultra Condensed', cursive;
+font-family: 'Viaoda Libre', cursive; */
+
 :root {
   --dLab-marine-blue: #393852;
   --dLab-grey: #F0F0F0;
@@ -27,7 +31,6 @@ body {
   margin: 0px;
   padding: 0px;
   background: var(--dLab-grey);
-  /* background: #4c5748; */
   font-family: "Oswald", "Source Sans Pro", sans-serif;
   font-size: 12pt;
   font-weight: 300;
@@ -133,10 +136,7 @@ a:hover {
   background-color: white;
 }
 
-#group-photo {
-  position: relative;
-  bottom: 22%;
-}
+
 .image {
   display: inline-block;
 }
@@ -463,35 +463,20 @@ ul.style2 li:first-child {
 
 /* CITAT */
 
-.blockquote {
+.blockquotes {
   padding: 60px 80px 40px;
   position: relative;
+  background-color: var(--dLab-grey);
+  margin: 0 auto;
 }
-.blockquote p {
+.blockquotes p {
   font-family: "Utopia-italic";
-  font-size: 35px;
-  font-weight: 700px;
+  font-family: 'Viaoda Libre', 'Stint Ultra Condensed', cursive;
+  font-size: 40px;
+  font-stretch: wider;
+  font-weight: 600;
   text-align: center;
-}
-.blockquote:before {
-  position: absolute;
-  font-family: "FontAwesome";
-  top: 0;
-
-  content: "\f10d";
-  font-size: 200px;
-  color: rgba(0, 0, 0, 0.1);
-}
-
-.blockquote::after {
-  content: "";
-  top: 20px;
-  left: 50%;
-  margin-left: -100px;
-  position: absolute;
-  border-bottom: 3px solid rgb(24, 201, 186);
-  height: 3px;
-  width: 200px;
+  color: black;
 }
 
 /* Zvezdice */

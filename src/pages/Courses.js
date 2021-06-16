@@ -9,7 +9,11 @@ const Courses = () => {
     <>
       <main id="page-wrapper">
         <div className="containerCourses">
-          <h1>Svi kursevi na jednom mestu!</h1>
+          <div className="blockquotes">
+            <p>
+              Nauučite programiranje sa nama!
+            </p>
+          </div>
 
           {courses.map((course) => {
             return (

@@ -27,7 +27,7 @@ const TeamMembers = () => {
   return (
     <section className="section">
       <div className="title">
-        <h2>Upoznaj nas</h2>
+        <h2>Tim Digital Lab</h2>
       </div>
       <div className="section-center">
         {teamMembers.map((teamMate, teamMateIndex) => {

@@ -1,51 +1,52 @@
+import DavidJovicic from "./jpegs/teaMembers/DavidJovicic.jpg";
+import DuravkoPetrović from "./jpegs/teaMembers/DuravkoPetrović.jpg";
+import IvanTrifunovic from "./jpegs/teaMembers/IvanTrifunovic.jpg";
+import JovanBlagojević from "./jpegs/teaMembers/JovanBlagojević.jpg";
+import LazaLazarević from "./jpegs/teaMembers/LazaLazarević.jpg";
+import NikolaStarčević from "./jpegs/teaMembers/NikolaStarčević.jpg";
+
 const teamMembers = [
   {
     id: 1,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
-    name: "David",
-    title: "Instruktor br1",
-    quote: "Naucicu te sve sto znam hehehehe",
+    image: DavidJovicic,
+    name: "David Jovičić",
+    title: "Golang Engineer",
+    quote: "Studirao na Fakultetu tehničkih nauka u Novom Sadu - smer informacione tehnologije. Iz Loznice.",
   },
   {
     id: 2,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
-    name: "Laza",
-    title: "Instruktor br2",
-    quote: "Tvrd je orah vocka cudnovata",
+    image: LazaLazarević,
+    name: "Laza Lazarević",
+    title: "Java Engineer",
+    quote: "Studirao  na Vojnoj Akademiji u Beogradu - smer Rečne jedinice. Iz Lučana.",
   },
   {
     id: 3,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
-    name: "Nikola",
-    title: "Instruktor br3",
-    quote: "Volim da palamudim pa je ovde neki ekstra citat!",
+    image: NikolaStarčević,
+    name: "Nikola Starčević",
+    title: "Java Script Engineer",
+    quote: "Studirao  na Vojnoj Akademiji u Beogradu - smer Rečne jedinice. Iz Loznice.",
   },
   {
     id: 4,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
-    name: "Dubravko",
-    title: "Instruktor br4",
-    quote: "Ne ide mi bas srpski",
+    image: DuravkoPetrović,
+    name: "Dubravko Petrović",
+    title: "Golang Engineer",
+    quote: "Studirao na Fakultetu tehničkih nauka u Novom Sadu - smer informacione tehnologije. Iz Loznice.",
   },
   {
     id: 5,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
-    name: "Ivan",
-    title: "Instruktor br5",
-    quote: "Koja ti je omiljena od Tome Zdravkovica??",
+    image: IvanTrifunovic,
+    name: "Ivan Trifunović",
+    title: "Dizajner",
+    quote: "Studirao na Fakultetu tehničkih nauka u Novom Sadu - smer Grafičko inženjerstvo i dizajn. Iz Loznice.",
   },
   {
     id: 6,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
-    name: "Jovan",
-    title: "Instruktor br6",
-    quote: "Mid or leave",
+    image: JovanBlagojević,
+    name: "Jovan Blagojević",
+    title: "PR",
+    quote: "Studirao poljoprivredni fakultet u Novom Sadu, poseduje višegodišnje iskustvo u radu sa medijima",
   },
 ];
 
