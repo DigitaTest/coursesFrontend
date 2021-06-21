@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import data from "./data";
+import data from "../../assets/teamMembers";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const TeamMembers = () => {
@@ -27,7 +27,7 @@ const TeamMembers = () => {
   return (
     <section className="section">
       <div className="title">
-        <h2>Upoznaj nas</h2>
+        <h2>Tim Digital Lab</h2>
       </div>
       <div className="section-center">
         {teamMembers.map((teamMate, teamMateIndex) => {

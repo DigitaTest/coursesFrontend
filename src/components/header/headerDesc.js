@@ -3,7 +3,6 @@ const HeaderDesc = () => {
     <>
       {/* Ovo je komponenta u kojoj se nalazi header slika tj. banner */}
       <header id="header-wrapper">
-        <section id="banner"></section>
       </header>
     </>
   );

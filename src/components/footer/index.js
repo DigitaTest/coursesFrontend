@@ -52,21 +52,21 @@ const Index = () => {
               </Link>
             </div>
           </div>
-          <div className='footer-Section'>
-            <div className='social-icons'>
+
+          <ul className="rightSection">
+            <li>
               <FaFacebook />
-            </div>
-            <div className='social-icons'>
+            </li>
+            <li>
               <FaInstagram />
-            </div>
-            <div className='social-icons'>
-              <FaTwitter />
-            </div>
-            <div className='social-icons'>
+            </li>
+            <li>
               <FaYoutube />
-            </div>
-          </div>
-          <div className='footer-Section'></div>
+            </li>
+            <li>
+              <FaTwitter />
+            </li>
+          </ul>
         </div>
         <div className='copyright'>
           <p>&copy; DIGITALAB. All rights reserved. 2021 |</p>

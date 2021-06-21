@@ -12,7 +12,7 @@ const Course = () => {
     name: "",
     image: "",
     desc: "",
-    author: "",
+    instructor: "",
     price: "",
     rating: "",
     language: "",
@@ -38,7 +38,6 @@ const Course = () => {
   return (
     <>
       <section>
-        <h1>{courseInfo.name}</h1>
         {/* podaci o kursu, potrebno dodati potrebna predznanja, ''kurs je idealan za ..'' itd. */}
         <BasicInfo {...course} />
         <div className="sellingCard">

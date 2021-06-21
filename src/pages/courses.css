@@ -7,7 +7,7 @@
   }
 
   .containerCourseCard {
-      background-color: var(--dLab-beige);
+      background-color: var(--dLab-white);
       padding: 1em;
       margin: 0.5em;
       width: 400px;
@@ -28,26 +28,31 @@
 
   .containerCourseCardTitle {
     text-align: left;
+    color: black;
   }
 
   .containerCourseCardAuth{
     text-align: left;
     opacity: 0.5;
+    color: black;
 }
 
   .containerCourseCardParag {
     text-align: justify;
+    color: black;
   }
  
   .ratings {
     font-size: 15px;
     height: 25px;
     float: left;
+    color: black;
   }
   .numberOfUsers {
     font-size: 15px;
     height: 25px;
     float: left;
+    color: black;
   }
 
   .containerCourseCardPrice {
@@ -56,5 +61,6 @@
     font-weight: bold;
     font-size: 25px;
     text-align: left;
+    color: black;
   }
 

@@ -9,10 +9,17 @@ const Courses = () => {
     <>
       <main id="page-wrapper">
         <div className="containerCourses">
-          <h1>Svi kursevi na jednom mestu!</h1>
+          <div className="blockquotes">
+            <p>
+              Nauučite programiranje sa nama!
+            </p>
+          </div>
 
           {courses.map((course) => {
             return (
+
+
+              <Link to={`/course/${course.id}`}>
               <div key={course.id} className="containerCourseCard">
                 <div className="containerCourseCardImage">
                   <img
@@ -45,12 +52,13 @@ const Courses = () => {
                 <div className="containerCourseCardPrice">
                   <h1>{course.price}</h1>
                 </div>
-                <div>
-                  <Link to={`/course/${course.id}`} className="button">
+                {/* <div>
+                  
                     Saznaj više
-                  </Link>
-                </div>
+                  
+                </div> */}
               </div>
+              </Link>
             );
           })}
         </div>
