@@ -6,20 +6,23 @@ import Team from "../team/team";
 import FAQ from "../../pages/FAQ";
 import Blog from "../../pages/blog";
 import PrivacyPolicy from "../../pages/privacyPolicy";
-import UserProfile from "../users/userProfile";
+import UserProfile from "../users/userProfile/userProfile";
 import Courses from "../../pages/Courses";
 import Course from "../course/course";
 import SignUp from "../../components/users/signup";
 import Login from "../../components/users/login";
 import PrivateRoute from "../routing/privateRoute";
 import PassReset from "../../components/users/passReset";
-import UpdateProfile from "../../components/users/updateProfile";
+import UpdateProfile from "../../components/users/userProfile/updateProfile";
 
 const Routing = () => {
   return (
     <>
       <Switch>
-        <PrivateRoute path="/user" component={UserProfile} />
+        <PrivateRoute path="/user">
+          <Navbar />
+          <UserProfile />
+        </PrivateRoute>
         <Route exact path="/">
           <Navbar />
           <Home />
