@@ -1,6 +1,6 @@
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import React, { useState, useRef } from "react";
-import { useAuth } from "../contexts/authContext";
+import { useAuth } from "../../contexts/authContext";
 import { Link, useHistory } from "react-router-dom";
 
 export default function UpdateProfile() {
