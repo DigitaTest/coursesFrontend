@@ -5,7 +5,7 @@
   padding: 2em;
 }
 
-.teamContainer{
+.teamContainer {
   display: flex;
   padding: 2em;
   margin: 1em auto;
@@ -15,7 +15,7 @@
   background: var(--dLab-grey);
 }
 
-.imageBox{
+.imageBox {
   float: left;
   margin: 1em;
 }
@@ -30,9 +30,13 @@
   margin: 1em;
   margin-left: 3em;
   padding: 2em;
-  font-size: 23px;
+  font-size: 0.9em;
   border-radius: 1.7em;
   background-color: var(--dLab-white);
+}
+.teamInfo h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
 }
 
 .section {
