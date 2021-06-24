@@ -1,7 +1,7 @@
-import Courses from "./Courses";
-import HeaderDesc from "../components/header/headerDesc";
-import Team from "../components/team/team";
-import Quote from "./quote"
+import Courses from '../components/infoCourses/Courses'
+import HeaderDesc from '../components/header/headerDesc'
+import Team from '../components/team/team'
+import Quote from './quote'
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <Team />
       <Courses />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

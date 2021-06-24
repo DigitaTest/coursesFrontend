@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import "../node_modules/font-awesome/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import '../node_modules/font-awesome/css/font-awesome.css';
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&family=Viaoda+Libre&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&family=Viaoda+Libre&display=swap');
 /* font-family: 'Stint Ultra Condensed', cursive;
 font-family: 'Viaoda Libre', cursive; */
 
@@ -31,7 +31,7 @@ body {
   margin: 0px;
   padding: 0px;
   background: var(--dLab-grey);
-  font-family: "Oswald", "Source Sans Pro", sans-serif;
+  font-family: 'Oswald', 'Source Sans Pro', sans-serif;
   font-size: 12pt;
   font-weight: 300;
   color: #000000;
@@ -489,8 +489,8 @@ ul.style2 li:first-child {
   margin: 0 auto;
 }
 .blockquotes p {
-  font-family: "Utopia-italic";
-  font-family: "Viaoda Libre", "Stint Ultra Condensed", cursive;
+  font-family: 'Utopia-italic';
+  font-family: 'Viaoda Libre', 'Stint Ultra Condensed', cursive;
   font-size: 40px;
   font-stretch: wider;
   font-weight: 600;
@@ -512,23 +512,23 @@ ul.style2 li:first-child {
 }
 
 .star-ratings-css::before {
-  content: "★★★★★";
+  content: '★★★★★';
   opacity: 0.3;
 }
 
-[title=".125"]::after {
+[title='.125']::after {
   width: 12.5%;
 }
-[title=".875"]::after {
+[title='.875']::after {
   width: 87.5%;
 }
-[title=".1000"]::after {
+[title='.1000']::after {
   width: 100%;
 }
 
 .star-ratings-css::after {
   color: gold;
-  content: "★★★★★";
+  content: '★★★★★';
   text-shadow: 0 1px 0 #ab5414;
   position: absolute;
   z-index: 1;

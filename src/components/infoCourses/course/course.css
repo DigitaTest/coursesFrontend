@@ -93,3 +93,30 @@ section {
 .sellingCardOffer-buttons {
   padding: 0em 3em;
 }
+
+.gainCard {
+  background-color: var(--dLab-light-olive);
+  margin: 2em;
+  width: 140vh;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.gainCard ul {
+  border-radius: 1em;
+  border-color: var(--dLab-red-grape);
+  border-style: solid;
+  border-width: 1px;
+
+  background-color: var(--dLab-light-blue);
+  list-style-type: circle;
+  list-style-position: inside;
+  display: flex;
+}
+
+.gainCard ul li {
+  margin: 1em;
+  width: 70vh;
+  font-size: small;
+  float: left;
+}

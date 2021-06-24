@@ -14,6 +14,7 @@ div h3 {
   background-color: var(--dLab-marine-blue);
   color: var(--dLab-grey);
   position: relative;
+  margin-top: 2em;
 }
 
 .footer .footer-content {
