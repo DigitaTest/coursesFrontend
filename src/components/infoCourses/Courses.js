@@ -10,7 +10,7 @@ const Courses = () => {
       <main id='page-wrapper'>
         <div className='containerCourses'>
           <div className='blockquotes'>
-            <p>Nauučite programiranje sa nama!</p>
+            <p>Naučite da programirate sa nama!</p>
           </div>
 
           {courses.map((course) => {

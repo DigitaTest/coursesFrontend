@@ -1,7 +1,9 @@
 /* KURS PAGE */
 
-section {
-  background-color: var(--dLab-beige);
+.coursePage {
+  background: linear-gradient(0deg, var(--dLab-grey), var(--dLab-white));
+  margin-top: 0;
+  padding: 3em;
 }
 
 .courseInfo {
@@ -95,28 +97,38 @@ section {
 }
 
 .gainCard {
-  background-color: var(--dLab-light-olive);
-  margin: 2em;
-  width: 140vh;
-  padding: 1em;
+  background-color: var(--dLab-grey);
+  margin: 1em;
+  width: 120vh;
+  padding: 2em;
   border-radius: 1em;
+  border-color: var(--dLab-light-olive);
+  border-style: solid;
+  border-width: 1px;
+}
+.gainCard h2 {
+  font-family: 'Viaoda Libre', cursive;
+  font-weight: 600;
 }
 
 .gainCard ul {
   border-radius: 1em;
-  border-color: var(--dLab-red-grape);
-  border-style: solid;
-  border-width: 1px;
-
-  background-color: var(--dLab-light-blue);
-  list-style-type: circle;
+  background-color: var(--dLab-grey);
+  list-style-type: symbols();
   list-style-position: inside;
-  display: flex;
+  column-width: 12em;
+  column-count: 2;
+  column-rule: thin solid black;
 }
 
 .gainCard ul li {
   margin: 1em;
-  width: 70vh;
-  font-size: small;
-  float: left;
+  font-size: medium;
+}
+
+#courseList {
+  background-color: red;
+  height: 100px;
+  width: 120vh;
+  margin: 1em;
 }

@@ -6,6 +6,8 @@ import './course.css'
 import data from '../../../assets/dataKursevi'
 import courseInfoData from '../../../assets/courseInfo'
 
+import { FiCheck } from 'react-icons/fi'
+
 const Course = () => {
   const [course, setCourse] = useState({
     id: '',
@@ -37,9 +39,8 @@ const Course = () => {
 
   return (
     <>
-      <section>
-        <BasicInfo {...course} />
-
+      <BasicInfo {...course} />
+      <div className='coursePage'>
         <div className='sellingCard'>
           <div onContextMenu={(e) => e.preventDefault()}>
             {/* promo spot, free epizoda  */}
@@ -65,20 +66,24 @@ const Course = () => {
           <h2>Šta dobijaš ovim kursom</h2>
           <ul>
             {courseInfo.gains.map((gain) => {
-              return <li>{gain}</li>
+              return (
+                <li>
+                  <FiCheck></FiCheck> {gain}
+                </li>
+              )
             })}
           </ul>
         </div>
 
+        <section id='courseList'>
+          <article>
+            <p>la la lA</p>
+          </article>
+        </section>
         {/* Ovde dodati listu sadrzaja kursa */}
         {/* Iskustva polaznika */}
         {/* Opcija placanja ofc */}
-        <div>
-          <Link to='/courses' className='button'>
-            Nazad
-          </Link>
-        </div>
-      </section>
+      </div>
     </>
   )
 }
