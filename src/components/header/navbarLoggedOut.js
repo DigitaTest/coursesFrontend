@@ -35,7 +35,7 @@ export const NavbarLoggedOut = () => {
           </ul>
           <ul className="rightSection">
             <li>
-              <Link to="/user">
+              <Link to="/login">
                 <div className="userIcon">
                   <BiUser />
                 </div>
