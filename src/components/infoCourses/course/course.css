@@ -126,9 +126,23 @@
   font-size: medium;
 }
 
-#courseList {
-  background-color: red;
-  height: 100px;
+
+
+.courseContent  {
   width: 120vh;
   margin: 1em;
+  background-color: yellow;
+  border-radius: 1em;
+}
+
+.sectionHedline {
+  background-color: wheat;
+  height: 1em;
+  width: 120vh;
+  border-radius: 1em;
+}
+
+.sectionBody {
+  background-color: red;
+  /* display: none; */
 }

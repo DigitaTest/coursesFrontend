@@ -37,7 +37,7 @@ const tableOfContent = [
         lectures: [
           {
             orderNumber: 5,
-            name: 'lekcija jedan',
+            name: 'lekcija jedan 2',
             duration: '01:45',
             resourse: 'link',
           },
@@ -66,7 +66,7 @@ const tableOfContent = [
         lectures: [
           {
             orderNumber: 9,
-            name: 'lekcija jedan',
+            name: 'lekcija jedan 3',
             duration: '01:45',
             resourse: 'link',
           },
