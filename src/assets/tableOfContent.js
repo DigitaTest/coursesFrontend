@@ -1,6 +1,7 @@
 const tableOfContent = [
   {
     id: 1,
+    name: 'Kurs JavaScript-a!',
     sections: [
       {
         name: 'section One',
@@ -36,7 +37,7 @@ const tableOfContent = [
         lectures: [
           {
             orderNumber: 5,
-            name: 'lekcija jedan',
+            name: 'lekcija jedan 2',
             duration: '01:45',
             resourse: 'link',
           },
@@ -65,7 +66,7 @@ const tableOfContent = [
         lectures: [
           {
             orderNumber: 9,
-            name: 'lekcija jedan',
+            name: 'lekcija jedan 3',
             duration: '01:45',
             resourse: 'link',
           },
@@ -93,6 +94,7 @@ const tableOfContent = [
   },
   {
     id: 2,
+    name: 'Kurs iz Pythona!',
     sections: [
       {
         name: 'section One',
@@ -185,6 +187,7 @@ const tableOfContent = [
   },
   {
     id: 3,
+    name: 'Kurs iz Jave!',
     sections: [
       {
         name: 'section One',
@@ -277,6 +280,7 @@ const tableOfContent = [
   },
   {
     id: 4,
+    name: 'Kurs iz GoLang-a!',
     sections: [
       {
         name: 'section One',
